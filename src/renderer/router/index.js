@@ -10,6 +10,16 @@ export default new Router({
       path: '/',
       name: 'Inbox',
       component: Inbox,
+      children: [
+        {
+          path: 'label/:label',
+          component: Inbox,
+        },
+        {
+          path: 'message/:id',
+          component: Inbox,
+        },
+      ],
     },
     {
       path: '*',

@@ -3,16 +3,16 @@
     <el-aside>
       <h1 class="logo">Yuppi!</h1>
       <nav class="labels">
-        <router-link to="/inbox" class="label">Inbox</router-link>
-        <router-link to="/inbox/trusted" class="label">Amigos</router-link>
-        <router-link to="/inbox/promo" class="label">Promoções</router-link>
-        <router-link to="/inbox/misc" class="label">Outros</router-link>
+        <router-link to="/" class="label">Inbox</router-link>
+        <router-link to="/label/trusted" class="label">Amigos</router-link>
+        <router-link to="/label/promo" class="label">Promoções</router-link>
+        <router-link to="/label/misc" class="label">Outros</router-link>
       </nav>
     </el-aside>
     <el-main class="inbox">
       <div class="search"></div>
       <div class="emails">
-        <email-item v-for="message in messages" :message="message"></email-item>
+        <email-item v-for="message in filteredMessages" :message="message"></email-item>
       </div>
     </el-main>
   </el-container>
@@ -20,15 +20,23 @@
 
 <script>
   import EmailItem from '@/components/EmailItem';
+  import { mapState } from 'vuex';
 
   export default {
     name: 'Inbox',
+    data() {
+      return { };
+    },
     components: {
       'email-item': EmailItem,
     },
     computed: {
-      messages() {
-        return this.$store.state.Inbox.messages;
+      ...mapState({ messages: state => state.Inbox.messages }),
+      label() { return this.$route.params.label; },
+      filteredMessages() {
+        return this.label ?
+          this.messages.filter(m => m.tag === this.label) :
+          this.messages;
       },
     },
   };

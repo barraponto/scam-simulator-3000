@@ -12,34 +12,31 @@
     <el-main class="inbox">
       <div class="search"></div>
       <div class="emails">
-        <router-link to="/inbox/message/1" class="email">
-          <div class="email--flag"><el-checkbox /></div>
-          <div class="email--from">Papai</div>
-          <div class="email--subject">Aumente seu tênis</div>
-          <div class="email--date">Out 10</div>
-        </router-link>
-        <router-link class="email" to="inbox/message/2">
-          <div class="email--flag"><el-checkbox /></div>
-          <div class="email--from">Papai</div>
-          <div class="email--subject">Aumente seu tênis</div>
-          <div class="email--date">Out 10</div>
-        </router-link>
+        <email-item v-for="message in messages" :message="message"></email-item>
       </div>
     </el-main>
   </el-container>
 </template>
 
 <script>
+  import EmailItem from '@/components/EmailItem';
+
   export default {
-    name: 'inbox',
-    components: { },
-    methods: { },
+    name: 'Inbox',
+    components: {
+      'email-item': EmailItem,
+    },
+    computed: {
+      messages() {
+        return this.$store.state.Inbox.messages;
+      },
+    },
   };
 </script>
 
 <style>
   #email-app {
-    height: 100vw;
+    height: 100vh;
   }
   .el-aside {
     background-color: orange;
@@ -65,28 +62,5 @@
   }
   .label:hover {
     background-color: rgba(0,0,0,0.3);
-  }
-  .email {
-    display: flex;
-    border-radius: 0.33em;
-    border: 1px solid #eee;
-    padding: 0.33em 1em;
-    text-decoration: none;
-    color: inherit;
-    margin: 0.33em 0;
-  }
-  .email:hover {
-    background-color: #eee;
-  }
-  .email--flag {
-    flex-basis: 2em;
-    flex-grow: 0;
-  }
-  .email--subject, .email--from {
-    flex-grow: 1;
-  }
-  .email--date {
-    flex-basis: 4em;
-    flex-grow: 0;
   }
 </style>

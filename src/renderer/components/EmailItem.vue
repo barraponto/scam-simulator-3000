@@ -32,6 +32,10 @@
     flex-basis: 2em;
     flex-grow: 0;
   }
+  .email--from {
+    max-width: 12em;
+    padding-right: 3em;
+  }
   .email--subject, .email--from {
     flex-grow: 1;
   }

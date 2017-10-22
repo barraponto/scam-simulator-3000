@@ -1,33 +1,38 @@
 <template>
-  <el-container id="email-app">
-    <sidebar />
-    <el-main>
-      <router-view />
-    </el-main>
-  </el-container>
+  <el-aside>
+    <h1 class="logo">Yuppi!</h1>
+    <nav class="labels">
+      <router-link to="/" class="label">Inbox</router-link>
+      <router-link to="/label/trusted" class="label">
+        <el-badge :value="unread('trusted')">
+          Amigos
+        </el-badge>
+      </router-link>
+      <router-link to="/label/promo" class="label">
+        <el-badge :value="unread('promo')">
+          Promoções
+        </el-badge>
+      </router-link>
+      <router-link to="/label/misc" class="label">
+        <el-badge :value="unread('misc')">
+          Outros
+        </el-badge>
+      </router-link>
+    </nav>
+    <div class="timer">00:00</div>
+  </el-aside>
 </template>
 
 <script>
-  import Sidebar from '@/components/Sidebar';
   import { mapGetters } from 'vuex';
 
   export default {
-    name: 'Inbox',
-    components: {
-      sidebar: Sidebar,
-    },
-    computed: {
-      ...mapGetters(['unread']),
-    },
+    name: 'Sidebar',
+    computed: { ...mapGetters(['unread']) },
   };
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
-
-  #email-app {
-    height: 100vh;
-  }
   .el-aside {
     background-color: orange;
     position: relative;
@@ -36,7 +41,6 @@
     color: white;
     text-align: center;
     font-size: 4em;
-    font-family: 'Bowlby One SC', cursive;
   }
   .labels, .label {
     display: block;
@@ -62,8 +66,8 @@
     margin: 0 auto;
     margin-bottom: 10%;
     width: inherit;
-    font: 3.5em "Bowlby One SC";
+    font: 3.5em "Open Sans";
     color: white;
-    visibility: visible;
+    visibility: hidden;
   }
 </style>

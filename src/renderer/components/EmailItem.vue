@@ -1,5 +1,6 @@
 <template>
-  <router-link :to="{name: 'Message', params: {id: message.id}}" class="email">
+  <router-link :to="{name: 'Message', params: {id: message.id}}"
+   :class="[{unread: !message.read}, 'email']">
     <div class="email--flag"><el-checkbox /></div>
     <div class="email--from">{{message.from}}</div>
     <div class="email--subject">{{message.subject}}</div>
@@ -18,6 +19,7 @@
 <style>
   .email {
     display: flex;
+    background-color: #eee;
     border-radius: 0.33em;
     border: 1px solid #eee;
     padding: 0.33em 1em;
@@ -26,7 +28,10 @@
     margin: 0.33em 0;
   }
   .email:hover {
-    background-color: #eee;
+    box-shadow: lightblue 0 0 0.66em;
+  }
+  .email.unread {
+    background-color: white;
   }
   .email--flag {
     width: 5%;

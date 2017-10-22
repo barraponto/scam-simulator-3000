@@ -20,6 +20,7 @@
           </el-badge>
         </router-link>
       </nav>
+      <div class="timer">00:00</div>
     </el-aside>
     <el-main class="inbox">
       <div class="search"></div>
@@ -57,6 +58,7 @@
   }
   .el-aside {
     background-color: orange;
+    position: relative;
   }
   .logo {
     color: white;
@@ -79,5 +81,16 @@
   }
   .label:hover {
     background-color: rgba(0,0,0,0.3);
+  }
+  .timer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    width: inherit;
+    font: 3.5em "Open Sans";
+    color: white;
+    visibility: hidden;
   }
 </style>

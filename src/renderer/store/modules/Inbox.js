@@ -412,6 +412,130 @@ const state = {
       Email: info@wasabi-jpn.com
       ―――――――――――――――――`,
     },
+    {
+      id: 17,
+      flagged: false,
+      read: false,
+      name: 'dreamdad@hotdad.com',
+      fase: '3',
+      from: 'Papai',
+      subject: 'É Campeão!!!!!',
+      date: 'Fev 22',
+      tag: 'trusted',
+      text: ` Seu irmão é o campeão!!!!
+        A familia está tão orgulhosa! Nosso pequeno fez o seu melhor e mostrou para o mundo todo seu potencial.
+        Ele vai receber um prêmio em dinheiro! Dos GRANDES! Mas ele não tem uma conta bancária na Nigéria , ele pediu pro governante Príncipe Alyusi Islassis
+        depositar na sua conta. O problema é: ele depositou o valor errado, e precisa de parte dele de volta.
+        Eles estão um pouco irritados. E seu irmão acha que se você nao resolver a tempo ele vai ser deletado.
+        Conto com você
+        Salve ser irmão (e nossos bolsos!).
+
+        Amorsamente e cheio de dindin,
+        Papai.`,
+    },
+    {
+      id: 18,
+      flagged: false,
+      read: false,
+      name: 'PrinceAlyusi@nigeriamail.com',
+      fase: '3',
+      from: 'Príncipe Alyusi Islassis',
+      subject: 'Depósito errado',
+      date: 'Fev 22',
+      tag: 'promo',
+      text: `
+      Preciso do meu dinheiro de volta!
+      O prêmio do seu irmão era de R$10.000
+      Acabei depositando R$100.000 por digitar errado no meu web banking.
+      Preciso do meu dinheiro de volta
+      até HOJE.`,
+    },
+    {
+      id: 19,
+      flagged: false,
+      read: false,
+      name: 'PrinceAlyusi@gmail.com',
+      fase: '3',
+      from: 'Príncipe Alyusi Islassis',
+      subject: 'DEVOLVA MEU DINHEIRO',
+      date: 'Fev 22',
+      tag: 'promo',
+      text: `
+      A VIDA DO SEU IRMÃO CORRE PERIGO!
+      DEVOLVA OS R$50.000 DO PRÍNCIPE AGORA!!
+      NÃO ROUBE NOSSO PAÍS!
+      `,
+    },
+    {
+      id: 20,
+      flagged: false,
+      read: false,
+      name: 'RealPrinceAlyusi@yahoo.com',
+      fase: '3',
+      from: 'Príncipe Alyusi Islassis',
+      subject: '$$$ já!  $$$ Sem sair de casa!!!',
+      date: 'Fev 22',
+      tag: 'promo',
+      text: `Fui convidado pela Nigéria National Petroleum Company para entrar em contato com você para obter ajuda na resolução de um assunto.
+       A Nigerian National Petroleum Company concluiu recentemente um grande número de contratos de exploração de petróleo na região do Sub-Sahara.
+       Os contratos produziram imediatamente fundos equivalentes a US $ 40.000.000.
+       A Nigéria National Petroleum Company está desejando a exploração de petróleo em outras partes do mundo, no entanto,
+       devido a certas regulamentações do governo da Nigéria, é incapaz de transferir esses fundos para outra região.
+
+       Você solicita assistência como cidadão não-nigeriano para ajudar a Nigerian National Petroleum Company,
+       e também o Banco Central da Nigéria, a retirar esses fundos da Nigéria. Se os fundos puderem ser transferidos para o seu nome,
+       na sua conta do Brasil, você pode encaminhar os fundos, conforme indicado pela Nigéria National Petroleum Company.
+       Em troca de seus serviços de atendimento, a Nigéria National Petroleum Company concordaria em permitir que você mantenha 10%,
+       ou US $ 4 milhões desse montante.
+
+      No entanto, para ser um cessionário legítimo desses dinheiros de acordo com a lei nigeriana,
+      você deve atualmente ser um depositante de pelo menos R$ 100.000 em um banco nigeriano que é regulado pelo Banco Central da Nigéria.
+
+      Se pudermos nos ajudar, seremos muito gratos. Sugerimos que nos conheça pessoalmente em Lagos e que, durante a sua visita,
+      apresentei-vos aos representantes da Nigerian National Petroleum Company, bem como a alguns funcionários do Banco Central da Nigéria.
+
+      Por favor, ligue-me o mais cedo possível em 18-467-4975.
+      O tempo é essencial na matéria;
+      muito rapidamente, o governo da Nigéria perceberá que o Banco Central está mantendo
+      este montante em depósito e tentando cobrar certos impostos depositários sobre ele.
+
+      Sinceramente,
+
+      Príncipe Alyusi Islassis`,
+    },
+    {
+      id: 21,
+      flagged: false,
+      read: false,
+      name: 'PrinciAlyusyy@nigeria.gov',
+      fase: '3',
+      from: 'Príncipe Alyusi Islassis',
+      subject: 'Conta Errada',
+      date: 'Fev 22',
+      tag: 'promo',
+      text: `
+      Lamento pelo transtorno. Fomos depositar o prêmio do seu irmão devido a corrida que ocorreu no dia 15 de Fevereiro na nigéria
+      porém quando convertemos a nossa moeda em real acabamos enviando um valor muito diferente do real.
+      Entre em contato para resolvermos a situação.
+      Atenciosamente,
+      Príncipe Alyusi Islassis`,
+    },
+    {
+      id: 22,
+      flagged: false,
+      read: false,
+      name: 'PrinceAlyusi@gov.ng',
+      fase: '3',
+      from: 'Príncipe Alyusi Islassis',
+      subject: 'Give My Money Back, please',
+      date: 'Fev 22',
+      tag: 'promo',
+      text: `Can I have my money back,please sir?
+      I don't speak portuguease. I just wanted to help your brother.
+      I'm not very good with computers and i typed the wrong value.
+      Sorry for the inconvenience.
+      Contact me ASAP.`,
+    },
   ],
 };
 

@@ -2,6 +2,7 @@ const state = {
   messages: [
     {
       flagged: false,
+      read: false,
       name: 'dreamdad@hotdad.com',
       from: 'Papai',
       subject: 'Aumente seu Tênis',
@@ -17,6 +18,7 @@ const state = {
     },
     {
       flagged: false,
+      read: true,
       name: 'Julio Gerente',
       from: 'JulioGerente@netxooz.com.br',
       subject: 'Promoção de Férias',
@@ -35,6 +37,7 @@ const state = {
     },
     {
       flagged: false,
+      read: false,
       name: 'amaguanda@yuppi.com.hk',
       from: 'Amaguanda',
       subject: 'CLIQUE AQUI e receba up two PRODUTOS TOTALMENTE FREE!!!',
@@ -47,6 +50,7 @@ const state = {
     },
     {
       flagged: false,
+      read: false,
       name: 'SAPATOSBARATOS@SAPATOS.kr',
       from: 'VENDAS@CAPSNUI.COM.BR',
       subject: 'FALTA APENAS 1 DIA PARA O FINAL DO SALDÃO DE CALÇADOS!!!!',
@@ -69,6 +73,7 @@ const state = {
     },
     {
       flagged: false,
+      read: true,
       name: 'kolobus@kolobus.com',
       from: 'Kolobus',
       subject: 'Você não vai acreditar no TAMANHO dessa promoção!!',
@@ -93,6 +98,7 @@ const state = {
     },
     {
       flagged: false,
+      read: true,
       name: 'cemboi@x90g5.rus.de',
       from: 'Gerente CEO Cemboi LTDA',
       subject: ' Deu a louca no gerente! 70% de desconto em toda loja de artigos esportivos!',

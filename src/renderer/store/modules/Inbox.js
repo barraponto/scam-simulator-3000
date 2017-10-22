@@ -1,10 +1,11 @@
-const state = {
+id: 5,const state = {
   messages: [
     {
       id: 1,
       flagged: false,
       read: false,
       name: 'dreamdad@hotdad.com',
+      fase: '1',
       from: 'Papai',
       subject: 'Aumente seu Tênis',
       date: 'Out 10',
@@ -20,8 +21,9 @@ const state = {
     {
       id: 2,
       flagged: false,
-      read: true,
+      read: false,
       name: 'Julio Gerente',
+      fase: '1',
       from: 'JulioGerente@netxooz.com.br',
       subject: 'Promoção de Férias',
       date: 'Out 08',
@@ -42,6 +44,7 @@ const state = {
       flagged: false,
       read: false,
       name: 'amaguanda@yuppi.com.hk',
+      fase: '1',
       from: 'Amaguanda',
       subject: 'CLIQUE AQUI e receba up two PRODUTOS TOTALMENTE FREE!!!',
       date: 'Out 10',
@@ -56,6 +59,7 @@ const state = {
       flagged: false,
       read: false,
       name: 'SAPATOSBARATOS@SAPATOS.kr',
+      fase: '1',
       from: 'VENDAS@CAPSNUI.COM.BR',
       subject: 'FALTA APENAS 1 DIA PARA O FINAL DO SALDÃO DE CALÇADOS!!!!',
       date: 'Out 09',
@@ -78,8 +82,9 @@ const state = {
     {
       id: 5,
       flagged: false,
-      read: true,
+      read: false,
       name: 'kolobus@kolobus.com',
+      fase: '1',
       from: 'Kolobus',
       subject: 'Você não vai acreditar no TAMANHO dessa promoção!!',
       date: 'Set 09',
@@ -104,8 +109,9 @@ const state = {
     {
       id: 6,
       flagged: false,
-      read: true,
+      read: false,
       name: 'cemboi@x90g5.rus.de',
+      fase: '1',
       from: 'Gerente CEO Cemboi LTDA',
       subject: ' Deu a louca no gerente! 70% de desconto em toda loja de artigos esportivos!',
       date: 'Out 10',
@@ -120,10 +126,13 @@ const state = {
         Clique no botão abaixo e cadastre-se. `,
     },
     {
+      id: 7,
       flagged: false,
+      read: false,
       name: 'dreamdad@hotdad.com',
       from: 'Papai',
       subject: 'Orgulho da familia',
+      fase: '2',
       date: 'Jan 07',
       tag: 'trusted',
       text: `FILHO! Tenho ótimas noticias!
@@ -139,12 +148,15 @@ const state = {
       como agradecimento!!!`,
     },
     {
+      id: 8,
       flagged: false,
+      read: false,
       name: 'ciano@cianoairlines.com',
+      fase: '2',
       from: 'Ciano Marketing',
       subject: 'URGENTE, Vôo para Nigéria',
       date: 'Jan 15',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Carx Derci
       Feliz Natal e ano novo para você e sua familia
 
@@ -159,12 +171,15 @@ const state = {
       Chefe de relações públicas. `,
     },
     {
+      id: 9,
       flagged: false,
+      read: false,
       name: 'aird&d@gmail.com',
+      fase: '2',
       from: 'AirD&D e você',
       subject: 'Descontos para suas passagens aéreas',
       date: 'Jan 21',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Caro consumidor,
       Venho por este email oferecer uma oferta imperdível
       Vôo para Lagos - Nigéria ida e volta por Reis 4.000
@@ -175,12 +190,15 @@ const state = {
       Eiki MilkShake.`,
     },
     {
+      id: 10,
       flagged: false,
+      read: false,
       name: 'Arline Airlines',
+      fase: '2',
       from: 'Arline',
       subject: 'O céu é o limite',
       date: 'Fev 01',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Azur Blue está promovendo vários destinos.
        Azur está atualmente em serviço para 105 destinos e está operando as 138 aeronaves,
       por isso é a empresa mais completa e abrangente em todo o país. O papel da empresa é estimular viagens aéreas com brasileiros e atender a mais lugares.
@@ -198,12 +216,15 @@ const state = {
       `,
     },
     {
+      id: 11,
       flagged: false,
+      read: false,
       name: 'sky@hskynet.com',
+      fase: '2',
       from: 'Skynet Intercâmbio',
       subject: 'Intercâmbio - Faculdade de Direito Nigéria',
       date: 'Jan 28',
-      tag: 'trusted',
+      tag: 'promo',
       text: `
       Com o objetivo de fornecer ferramentas para atuarem profissionalmente como interlocutores estrangeiros e no ambiente jurídico internacional.
       Utilizando-se de métodos como o vocabulário, gramática, estilo e conceitos do idioma Inglês e de como eles são usados por profissionais
@@ -242,12 +263,15 @@ const state = {
       `,
     },
     {
+      id: 12,
       flagged: false,
+      read: false,
       name: 'PrinceAlyusi@nigeriamail.com',
+      fase: '2',
       from: 'Príncipe Alyusi Islassis',
       subject: 'Nigéria National Petroleum Company',
       date: 'Fev 05',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Fui convidado pela Nigéria National Petroleum Company para entrar em contato com você para obter ajuda na resolução de um assunto.
        A Nigerian National Petroleum Company concluiu recentemente um grande número de contratos de exploração de petróleo na região do Sub-Sahara.
        Os contratos produziram imediatamente fundos equivalentes a US $ 40.000.000.
@@ -276,12 +300,15 @@ const state = {
       Príncipe Alyusi Islassis`,
     },
     {
+      id: 13,
       flagged: false,
+      read: false,
       name: 'nepalairline@gmail.com',
+      fase: '2',
       from: 'Nepal Evereste Airlines',
       subject: 'Voe mais alto que o Evereste com a Nepal Airlines ',
       date: 'jan 10',
-      tag: 'trusted',
+      tag: 'promo',
       text: `
       Devido a recentes pesquisas de Marketing escolhemos você para uma promoção especial de inicio de ano!
       A Nepal Evereste Airlines oferece um desconto de 20% nas passagens internacionais saindo de São Paulo.
@@ -303,12 +330,15 @@ const state = {
       Evereste Airlines`,
     },
     {
+      id: 14,
       flagged: false,
+      read: false,
       name: 'alice@wonderland.com',
+      fase: '2',
       from: 'Mussum',
       subject: 'Cacilds',
       date: 'Jan 32',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Praesent vel viverra nisi.
        Mauris aliquet nunc non turpis scelerisque, eget. Diuretics paradis num copo é motivis de denguis. Manduma pindureta quium dia nois paga.
 
@@ -326,12 +356,15 @@ const state = {
         Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mim que vai caçá sua turmis!`,
     },
     {
+      id: 15,
       flagged: false,
+      read: false,
       name: 'passagensbaratas@trembom.com',
+      fase: '2',
       from: 'Passagens baratas',
       subject: 'Compre sua passagem hoje!',
       date: 'Fev 04',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Os interessados em viajar durante as férias de Fevereiro já podem adquirir suas passagens.
        Com a venda antecipada de passagens disponibilizada pela Vale,
        é possível adquirir os bilhetes de viagem com até 60 dias de antecedência da data do passeio e,
@@ -343,12 +376,15 @@ const state = {
        nos pontos de venda disponibilizados pela Vale em diferentes cidades por onde a linha férrea passa e, também, no site do Trem de Passageiros.`,
     },
     {
+      id: 16,
       flagged: false,
+      read: false,
       name: 'wasabi-jpn@airnippon.jpn',
+      fase: '2',
       from: 'Nico Nico Douga',
       subject: 'IKIMASU!',
       date: 'Fev 01',
-      tag: 'trusted',
+      tag: 'promo',
       text: `けんめい： アポイントメントのお願ねがい
       本文ほんぶん：
       株式会社かぶしきがいしゃワサビ石いし田だ様さま

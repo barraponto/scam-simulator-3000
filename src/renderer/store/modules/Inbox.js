@@ -1,4 +1,4 @@
-id: 5,const state = {
+const state = {
   messages: [
     {
       id: 1,

@@ -39,7 +39,7 @@ const state = {
       from: 'Amaguanda',
       subject: 'CLIQUE AQUI e receba up two PRODUTOS TOTALMENTE FREE!!!',
       date: 'Out 10',
-      tag: 'trusted',
+      tag: 'promo',
       text: `
       AQUI ESTÁ A 25% DE COUPON APENAS PARA UM MEMBRO VIP VALORADO!
       O código do cupom acabou em breve, por favor, conte-nos quais os produtos que você deseja, vamos buscá-los gratuitamente
@@ -51,7 +51,7 @@ const state = {
       from: 'VENDAS@CAPSNUI.COM.BR',
       subject: 'FALTA APENAS 1 DIA PARA O FINAL DO SALDÃO DE CALÇADOS!!!!',
       date: 'Out 09',
-      tag: 'trusted',
+      tag: 'promo',
       text: `VOCÊ PRECISA DE UM SAPATO NOVO?
             SEUS PROBLEMAS ACABARAM! CLIQUE AQUI PARA VER AS PROMOÇÕES MAIS QUENTES NO MUNDO DOS CALÇADOS
             www.SAPATOSBARATOS.kr
@@ -73,7 +73,7 @@ const state = {
       from: 'Kolobus',
       subject: 'Você não vai acreditar no TAMANHO dessa promoção!!',
       date: 'Set 09',
-      tag: 'trusted',
+      tag: 'promo',
       text: `Você merece se dar um presente :D
       PROMOÇÃO NÃO CUMULATIVA. VÁLIDA SOMENTE PARA PRODUTOS VENDIDOS E ENTREGUES PELA KOLOBUS.
       EXCETO COMBOS, BICICLETAS, EQUIPAMENTO DE FITNESS, KIT FITNESS, JOGOS, GAMES, ELETRÔNICOS,
@@ -97,7 +97,7 @@ const state = {
       from: 'Gerente CEO Cemboi LTDA',
       subject: ' Deu a louca no gerente! 70% de desconto em toda loja de artigos esportivos!',
       date: 'Out 10',
-      tag: 'trusted',
+      tag: 'promo',
       text: `COMPRA PREMIADA
         Basta se cadastrar no site, nas compras a partir de R$ 30,00 com seu cartão de crédito na
         Cemboi, você pode ganhar na hora prêmios instantâneos de R$ 300,00*,

@@ -1,7 +1,7 @@
 <template>
   <div class="emails">
     <email-item v-for="message in filtered"
-    :message="message" :key="message.id" />
+      :message="message" :key="message.id" />
   </div>
 </template>
 

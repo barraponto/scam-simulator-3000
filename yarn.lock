@@ -30,6 +30,10 @@
   version "8.0.46"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.46.tgz#6e1766b2d0ed06631d5b5f87bb8e72c8dbb6888e"
 
+"@xkeshi/vue-countdown@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@xkeshi/vue-countdown/-/vue-countdown-0.4.0.tgz#766e042cf6ad0ea7b280bd13987bf99d813c819d"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

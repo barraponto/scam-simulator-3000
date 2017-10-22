@@ -56,6 +56,7 @@
     }
   },
   "dependencies": {
+    "@xkeshi/vue-countdown": "^0.4.0",
     "axios": "^0.16.1",
     "element-ui": "^2.0.0-beta.1",
     "normalize.css": "^7.0.0",

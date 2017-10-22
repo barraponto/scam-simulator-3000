@@ -5,7 +5,7 @@
       <router-link to="/" class="label">Inbox</router-link>
       <router-link to="/label/trusted" class="label">
         <el-badge :value="unread('trusted')">
-          Amigos
+          Família
         </el-badge>
       </router-link>
       <router-link to="/label/promo" class="label">
@@ -19,16 +19,24 @@
         </el-badge>
       </router-link>
     </nav>
-    <div class="timer">00:00</div>
+    <countdown :time="5 * 60 * 1000 + 1000" v-if="mission">
+      <div class="timer" slot-scope="props">
+        {{props.minutes}}:{{props.seconds}}
+      </div>
+    </countdown>
   </el-aside>
 </template>
 
 <script>
   import { mapGetters } from 'vuex';
+  import VueCountdown from '@xkeshi/vue-countdown';
 
   export default {
     name: 'Sidebar',
-    computed: { ...mapGetters(['unread']) },
+    components: { countdown: VueCountdown },
+    computed: {
+      ...mapGetters(['unread', 'mission']),
+    },
   };
 </script>
 
@@ -68,6 +76,5 @@
     width: inherit;
     font: 3.5em "Open Sans";
     color: white;
-    visibility: hidden;
   }
 </style>

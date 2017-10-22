@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Inbox from '@/components/Inbox';
+import MailBox from '@/components/MailBox';
 
 Vue.use(Router);
 
@@ -12,10 +13,18 @@ export default new Router({
       component: Inbox,
       children: [
         {
-          path: 'label/:label',
-          component: Inbox,
+          name: 'Main',
+          path: '/',
+          component: MailBox,
         },
         {
+          name: 'MailBox',
+          path: 'label/:label?',
+          component: MailBox,
+          props: true,
+        },
+        {
+          name: 'Message',
           path: 'message/:id',
           component: Inbox,
         },

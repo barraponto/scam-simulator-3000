@@ -22,17 +22,13 @@
       </nav>
       <div class="timer">00:00</div>
     </el-aside>
-    <el-main class="inbox">
-      <div class="search"></div>
-      <div class="emails">
-        <email-item v-for="message in withLabel(label)" :message="message" />
-      </div>
+    <el-main>
+      <router-view />
     </el-main>
   </el-container>
 </template>
 
 <script>
-  import EmailItem from '@/components/EmailItem';
   import { mapGetters } from 'vuex';
 
   export default {
@@ -40,14 +36,8 @@
     data() {
       return { };
     },
-    components: {
-      'email-item': EmailItem,
-    },
-    methods: {
-    },
     computed: {
-      ...mapGetters(['withLabel', 'unread']),
-      label() { return this.$route.params.label; },
+      ...mapGetters(['unread']),
     },
   };
 </script>

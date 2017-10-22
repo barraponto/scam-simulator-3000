@@ -15,10 +15,10 @@
   export default {
     name: 'EmailView',
     components: { },
-    props: ['id'],
+    props: { id: String },
     computed: {
-      ...mapGetters(['messages']),
-      message() { return this.messages.find(m => m.id === this.id); },
+      ...mapGetters(['byId']),
+      message() { return this.byId(this.id); },
     },
   };
 </script>

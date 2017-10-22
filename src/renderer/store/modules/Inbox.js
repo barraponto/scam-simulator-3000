@@ -1,7 +1,7 @@
 const state = {
   messages: [
     {
-      id: 1,
+      id: '1',
       flagged: false,
       read: false,
       name: 'dreamdad@hotdad.com',
@@ -19,7 +19,7 @@ const state = {
       XOXO`,
     },
     {
-      id: 2,
+      id: '2',
       flagged: false,
       read: false,
       name: 'Julio Gerente',
@@ -40,7 +40,7 @@ const state = {
       Netxooz LTDA.`,
     },
     {
-      id: 3,
+      id: '3',
       flagged: false,
       read: false,
       name: 'amaguanda@yuppi.com.hk',
@@ -55,7 +55,7 @@ const state = {
       www.shoehero.com/pormo.exe`,
     },
     {
-      id: 4,
+      id: '4',
       flagged: false,
       read: false,
       name: 'SAPATOSBARATOS@SAPATOS.kr',
@@ -80,7 +80,7 @@ const state = {
             KOREANGUY@SAPATOSBARATOS.KR`,
     },
     {
-      id: 5,
+      id: '5',
       flagged: false,
       read: false,
       name: 'kolobus@kolobus.com',
@@ -107,7 +107,7 @@ const state = {
       www.kolobus.com `,
     },
     {
-      id: 6,
+      id: '6',
       flagged: false,
       read: false,
       name: 'cemboi@x90g5.rus.de',
@@ -126,7 +126,7 @@ const state = {
         Clique no botão abaixo e cadastre-se. `,
     },
     {
-      id: 7,
+      id: '7',
       flagged: false,
       read: false,
       name: 'dreamdad@hotdad.com',
@@ -148,7 +148,7 @@ const state = {
       como agradecimento!!!`,
     },
     {
-      id: 8,
+      id: '8',
       flagged: false,
       read: false,
       name: 'ciano@cianoairlines.com',
@@ -171,7 +171,7 @@ const state = {
       Chefe de relações públicas. `,
     },
     {
-      id: 9,
+      id: '9',
       flagged: false,
       read: false,
       name: 'aird&d@gmail.com',
@@ -190,7 +190,7 @@ const state = {
       Eiki MilkShake.`,
     },
     {
-      id: 10,
+      id: '10',
       flagged: false,
       read: false,
       name: 'Arline Airlines',
@@ -216,7 +216,7 @@ const state = {
       `,
     },
     {
-      id: 11,
+      id: '11',
       flagged: false,
       read: false,
       name: 'sky@hskynet.com',
@@ -263,7 +263,7 @@ const state = {
       `,
     },
     {
-      id: 12,
+      id: '12',
       flagged: false,
       read: false,
       name: 'PrinceAlyusi@nigeriamail.com',
@@ -300,7 +300,7 @@ const state = {
       Príncipe Alyusi Islassis`,
     },
     {
-      id: 13,
+      id: '13',
       flagged: false,
       read: false,
       name: 'nepalairline@gmail.com',
@@ -330,7 +330,7 @@ const state = {
       Evereste Airlines`,
     },
     {
-      id: 14,
+      id: '14',
       flagged: false,
       read: false,
       name: 'alice@wonderland.com',
@@ -356,7 +356,7 @@ const state = {
         Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mim que vai caçá sua turmis!`,
     },
     {
-      id: 15,
+      id: '15',
       flagged: false,
       read: false,
       name: 'passagensbaratas@trembom.com',
@@ -376,7 +376,7 @@ const state = {
        nos pontos de venda disponibilizados pela Vale em diferentes cidades por onde a linha férrea passa e, também, no site do Trem de Passageiros.`,
     },
     {
-      id: 16,
+      id: '16',
       flagged: false,
       read: false,
       name: 'wasabi-jpn@airnippon.jpn',
@@ -546,12 +546,13 @@ const actions = {
 };
 
 const getters = {
-  messages: state => state.messages,
-  withLabel: state =>
-    label => state.messages.filter(m => !label || m.tag === label),
+  messages: state => state.messages || [],
+  withLabel: (state, getters) =>
+    label => getters.messages.filter(m => !label || m.tag === label),
   unread: (state, getters) =>
     label => getters.withLabel(label).filter(m => !m.read).length,
-  byId: state => messageId => state.messages.find(m => m.id === messageId),
+  byId: (state, getters) =>
+    messageId => getters.messages.find(m => m.id === messageId),
 };
 
 export default {

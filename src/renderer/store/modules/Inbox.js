@@ -1,6 +1,7 @@
 const state = {
   messages: [
     {
+      id: 1,
       flagged: false,
       read: false,
       name: 'dreamdad@hotdad.com',
@@ -17,6 +18,7 @@ const state = {
       XOXO`,
     },
     {
+      id: 2,
       flagged: false,
       read: true,
       name: 'Julio Gerente',
@@ -36,6 +38,7 @@ const state = {
       Netxooz LTDA.`,
     },
     {
+      id: 3,
       flagged: false,
       read: false,
       name: 'amaguanda@yuppi.com.hk',
@@ -49,6 +52,7 @@ const state = {
       www.shoehero.com/pormo.exe`,
     },
     {
+      id: 4,
       flagged: false,
       read: false,
       name: 'SAPATOSBARATOS@SAPATOS.kr',
@@ -72,6 +76,7 @@ const state = {
             KOREANGUY@SAPATOSBARATOS.KR`,
     },
     {
+      id: 5,
       flagged: false,
       read: true,
       name: 'kolobus@kolobus.com',
@@ -97,6 +102,7 @@ const state = {
       www.kolobus.com `,
     },
     {
+      id: 6,
       flagged: false,
       read: true,
       name: 'cemboi@x90g5.rus.de',
@@ -124,10 +130,11 @@ const actions = {
 
 const getters = {
   messages: state => state.messages,
-  withLabel: (state, getters) =>
-    label => getters.messages.filter(m => !label || m.tag === label),
+  withLabel: state =>
+    label => state.messages.filter(m => !label || m.tag === label),
   unread: (state, getters) =>
     label => getters.withLabel(label).filter(m => !m.read).length,
+  byId: state => messageId => state.messages.find(m => m.id === messageId),
 };
 
 export default {

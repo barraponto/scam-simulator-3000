@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/inbox/message/1" class="email">
+  <router-link :to="{name: 'Message', params: {id: message.id}}" class="email">
     <div class="email--flag"><el-checkbox /></div>
     <div class="email--from">{{message.from}}</div>
     <div class="email--subject">{{message.subject}}</div>

@@ -122,8 +122,17 @@ const mutations = {
 const actions = {
 };
 
+const getters = {
+  messages: state => state.messages,
+  withLabel: (state, getters) =>
+    label => getters.messages.filter(m => !label || m.tag === label),
+  unread: (state, getters) =>
+    label => getters.withLabel(label).filter(m => !m.read).length,
+};
+
 export default {
   state,
   mutations,
   actions,
+  getters,
 };

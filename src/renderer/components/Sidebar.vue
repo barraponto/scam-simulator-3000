@@ -19,7 +19,7 @@
         </el-badge>
       </router-link>
     </nav>
-    <countdown :time="5 * 60 * 1000 + 1000" v-if="mission">
+    <countdown :time="5 * 60 * 1000" v-if="mission">
       <div class="timer" slot-scope="props">
         {{props.minutes}}:{{props.seconds}}
       </div>
@@ -68,12 +68,8 @@
     background-color: rgba(0,0,0,0.3);
   }
   .timer {
-    position: absolute;
     text-align: center;
-    bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 10%;
-    width: inherit;
+    margin: 2em auto 0;
     font: 3.5em "Open Sans";
     color: white;
   }

@@ -17,6 +17,11 @@ const state = {
       Enfim, eu separei $250 reais para a compra, tudo que vc conseguir de desconto, pode ficar pra você.
 
       XOXO`,
+      options: [
+        'Beleza, pai! Já resolvo.',
+        '$250 é pouco. Manda mais.',
+        'Pra ele vc compra tênis, né?',
+      ],
     },
     {
       id: '2',

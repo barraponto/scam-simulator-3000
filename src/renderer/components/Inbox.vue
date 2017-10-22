@@ -55,15 +55,4 @@
   .label:hover {
     background-color: rgba(0,0,0,0.3);
   }
-  .timer {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 10%;
-    width: inherit;
-    font: 3.5em "Bowlby One SC";
-    color: white;
-    visibility: visible;
-  }
 </style>

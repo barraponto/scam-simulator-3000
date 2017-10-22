@@ -6,6 +6,12 @@
       <div class="mail-date">{{message.date}}</div>
     </div>
     <markdown class="mail-content" :source="message.text" />
+    <div class="actions">
+      <el-button @click="respond({message: message.id, option: index})"
+        v-for="(option, index) in message.options" key="option">
+        {{option}}
+      </el-button>
+    </div>
   </div>
 </template>
 
@@ -15,9 +21,6 @@
 
   export default {
     name: 'EmailView',
-    data() {
-      return {};
-    },
     components: { markdown: VueMarkdown },
     props: { id: String },
     computed: {
@@ -25,7 +28,7 @@
       message() { return this.byId(this.id); },
     },
     methods: {
-      ...mapActions(['viewed']),
+      ...mapActions(['viewed', 'respond']),
     },
     mounted() {
       this.viewed(this.id);
@@ -64,5 +67,9 @@
   }
   .mail-content {
     margin: 3%;
+  }
+  .actions {
+    padding: 1em;
+    text-align: center;
   }
 </style>

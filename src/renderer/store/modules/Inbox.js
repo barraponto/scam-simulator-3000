@@ -119,6 +119,263 @@ const state = {
         de desconto em qualquer compra!
         Clique no botão abaixo e cadastre-se. `,
     },
+    {
+      flagged: false,
+      name: 'dreamdad@hotdad.com',
+      from: 'Papai',
+      subject: 'Orgulho da familia',
+      date: 'Jan 07',
+      tag: 'trusted',
+      text: `FILHO! Tenho ótimas noticias!
+      Seu irmão ganhou a competição e foi selecionado para a proxima maratona na Nigéria!
+      A maratona vai ocorrer no dia 21 de Fev. Ele gostaria de chegar com 2 semanas de antecedência para poder se acostumar com o clima do país.
+      Como você foi tão eficiente para comprar o tênis novo, eu achei que você poderia ajudar novamente com a compra da passagem aérea.
+      A Empresa Ciano faz o vôo por $2.483 reais (só de ida). Estou separando $5.000 reais para você comprar as passagens do seu irmão.
+      O dinheiro que sobrar é seu.
+
+      Papai te ama.
+
+      OBS: Eu tenho recebido uns emails estranhos de um Príncipe Nigeriano pedindo para eu fazer uma transferência para ele. Ele quer me dar 4 milhões
+      como agradecimento!!!`,
+    },
+    {
+      flagged: false,
+      name: 'ciano@cianoairlines.com',
+      from: 'Ciano Marketing',
+      subject: 'URGENTE, Vôo para Nigéria',
+      date: 'Jan 15',
+      tag: 'trusted',
+      text: `Carx Derci
+      Feliz Natal e ano novo para você e sua familia
+
+      Bom dia! Como estão as coisas? Eu preciso reservar sua o mais rápido possível
+      Faltam dois assentos no aviao para Lagos - Nigéria.
+      Como combinado o preço das passagens são $5.500 reais.
+
+      Responda assim que ler o email.
+      Atenciosamente,
+
+      Ciano Turquesa,
+      Chefe de relações públicas. `,
+    },
+    {
+      flagged: false,
+      name: 'aird&d@gmail.com',
+      from: 'AirD&D e você',
+      subject: 'Descontos para suas passagens aéreas',
+      date: 'Jan 21',
+      tag: 'trusted',
+      text: `Caro consumidor,
+      Venho por este email oferecer uma oferta imperdível
+      Vôo para Lagos - Nigéria ida e volta por Reis 4.000
+      O vôo parte de São Pablo aeroporto do Galeão.
+      CLIQUE NO LINK ABAIXO e compre Hoje mesmo!
+
+      AirD&D - Voe conosco,
+      Eiki MilkShake.`,
+    },
+    {
+      flagged: false,
+      name: 'Arline Airlines',
+      from: 'Arline',
+      subject: 'O céu é o limite',
+      date: 'Fev 01',
+      tag: 'trusted',
+      text: `Azur Blue está promovendo vários destinos.
+       Azur está atualmente em serviço para 105 destinos e está operando as 138 aeronaves,
+      por isso é a empresa mais completa e abrangente em todo o país. O papel da empresa é estimular viagens aéreas com brasileiros e atender a mais lugares.
+      Para fazer mais pessoas viajar de avião, a empresa é baseada
+      em uma combinação de qualidade de serviço e baixo preço e é atraente para os consumidores.
+      Em relação à decolagem, a empresa ocupa 32% do mercado de aviação civil brasileira.
+      Através do vôo para a capital do interior e as cidades, ofereceremos inovação na dinâmica do mercado,
+      fornecendo um avião que oferece opções de entretenimento confortáveis e espaçosas e um serviço de bordo de alta qualidade.
+      O Blue Promotion Ticket oferece garantia econômica de despesas de viagem, proporcionando peças confortáveis e confortáveis.
+      Compre sua passagens para Nigéria em promoção!
+      -ida 10 de Fev : 1.300 reais
+      -volta 28 de Fev : 1.500 reais
+      Promoção válida até 05 de Fev
+      Confira o site arlineairlines.com.br
+      `,
+    },
+    {
+      flagged: false,
+      name: 'sky@hskynet.com',
+      from: 'Skynet Intercâmbio',
+      subject: 'Intercâmbio - Faculdade de Direito Nigéria',
+      date: 'Jan 28',
+      tag: 'trusted',
+      text: `
+      Com o objetivo de fornecer ferramentas para atuarem profissionalmente como interlocutores estrangeiros e no ambiente jurídico internacional.
+      Utilizando-se de métodos como o vocabulário, gramática, estilo e conceitos do idioma Inglês e de como eles são usados por profissionais
+      da área jurídica, o curso irá orientar os alunos na teoria e em visitas práticas.
+      Desenvolvimento das habilidades orais através de discussões em classe e exercícios aplicados para treino da escrita, própria do meio legal.
+      Disponível também curso de Inglês Geral (nível iniciante a intermediário) com acompanhamento às visitas Guiadas.
+       Duração:
+      • 2 semanas.
+       Datas:
+      • Data de saída 07/02/2017.
+      • Data de retorno 22/02/2017
+
+       Pacote Inclui:
+      • 2 Semanas de curso voltado  para área de Direito - Legal English Advanced Elective;
+      • Matrícula;
+      • Material didático;
+      • Acomodação;
+      • Transfer do aeroporto;
+      • Seguro Saúde;
+      • Certificados;
+      • Visitas guiadas a:
+      - Suprema Corte;
+      - Tribunal de Apelações Distrito de Lagos ;
+      - Universidade Moshood Abiola;
+       Acrescentar:
+
+      • Passagem Aérea + taxas;
+      • Custos com documentação necessária (passaporte e vistos);
+      • Despesas de alimentação.
+       Investimento:
+      • Taxa Administrativa R$ 160,00;
+      • Pacote R$2.475,00;*
+      *Verifique formas de parcelamento e condições especiais
+
+      Skynet - Intercâmbio.
+      `,
+    },
+    {
+      flagged: false,
+      name: 'PrinceAlyusi@nigeriamail.com',
+      from: 'Príncipe Alyusi Islassis',
+      subject: 'Nigéria National Petroleum Company',
+      date: 'Fev 05',
+      tag: 'trusted',
+      text: `Fui convidado pela Nigéria National Petroleum Company para entrar em contato com você para obter ajuda na resolução de um assunto.
+       A Nigerian National Petroleum Company concluiu recentemente um grande número de contratos de exploração de petróleo na região do Sub-Sahara.
+       Os contratos produziram imediatamente fundos equivalentes a US $ 40.000.000.
+       A Nigéria National Petroleum Company está desejando a exploração de petróleo em outras partes do mundo, no entanto,
+       devido a certas regulamentações do governo da Nigéria, é incapaz de transferir esses fundos para outra região.
+
+       Você solicita assistência como cidadão não-nigeriano para ajudar a Nigerian National Petroleum Company,
+       e também o Banco Central da Nigéria, a retirar esses fundos da Nigéria. Se os fundos puderem ser transferidos para o seu nome,
+       na sua conta do Brasil, você pode encaminhar os fundos, conforme indicado pela Nigéria National Petroleum Company.
+       Em troca de seus serviços de atendimento, a Nigéria National Petroleum Company concordaria em permitir que você mantenha 10%,
+       ou US $ 4 milhões desse montante.
+
+      No entanto, para ser um cessionário legítimo desses dinheiros de acordo com a lei nigeriana,
+      você deve atualmente ser um depositante de pelo menos R$ 100.000 em um banco nigeriano que é regulado pelo Banco Central da Nigéria.
+
+      Se pudermos nos ajudar, seremos muito gratos. Sugerimos que nos conheça pessoalmente em Lagos e que, durante a sua visita,
+      apresentei-vos aos representantes da Nigerian National Petroleum Company, bem como a alguns funcionários do Banco Central da Nigéria.
+
+      Por favor, ligue-me o mais cedo possível em 18-467-4975.
+      O tempo é essencial na matéria;
+      muito rapidamente, o governo da Nigéria perceberá que o Banco Central está mantendo
+      este montante em depósito e tentando cobrar certos impostos depositários sobre ele.
+
+      Sinceramente,
+
+      Príncipe Alyusi Islassis`,
+    },
+    {
+      flagged: false,
+      name: 'nepalairline@gmail.com',
+      from: 'Nepal Evereste Airlines',
+      subject: 'Voe mais alto que o Evereste com a Nepal Airlines ',
+      date: 'jan 10',
+      tag: 'trusted',
+      text: `
+      Devido a recentes pesquisas de Marketing escolhemos você para uma promoção especial de inicio de ano!
+      A Nepal Evereste Airlines oferece um desconto de 20% nas passagens internacionais saindo de São Paulo.
+      Promoção válidas para compras até 01/Fev.
+      Passagens válidas para o mês de Fevereiro
+      Seguem os valores mais desejados pelos nossos clientes (ida e volta).
+      Estados Unidos - R$ 2.450
+      Armenia - R$ 3.567
+      Nigéria - R$ 6.224
+      Egito - R$ 5.760
+      Usbesquitão - R$ 5.550
+      Bolívia - R$ 1.240
+      Nícaragua - R$ 7.500
+      Estônia - R$ 6.789
+      Rússia - R$ 5.666
+      Zimbabue - R$ 4.631
+
+      Atenciosamente,
+      Evereste Airlines`,
+    },
+    {
+      flagged: false,
+      name: 'alice@wonderland.com',
+      from: 'Mussum',
+      subject: 'Cacilds',
+      date: 'Jan 32',
+      tag: 'trusted',
+      text: `Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada. Praesent vel viverra nisi.
+       Mauris aliquet nunc non turpis scelerisque, eget. Diuretics paradis num copo é motivis de denguis. Manduma pindureta quium dia nois paga.
+
+       Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+       Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+
+       In elementis mé pra quem é amistosis quis leo. Copo furadis é disculpa de bebadis, arcu quam euismod magna.
+       Suco de cevadiss deixa as pessoas mais interessantis. Leite de capivaris, leite de mula manquis sem cabeça.
+
+       Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+       Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+       Quem num gosta di mé, boa gentis num é.
+
+       Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Posuere libero varius.
+        Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Cevadis im ampola pa arma uma pindureta. Quem num gosta di mim que vai caçá sua turmis!`,
+    },
+    {
+      flagged: false,
+      name: 'passagensbaratas@trembom.com',
+      from: 'Passagens baratas',
+      subject: 'Compre sua passagem hoje!',
+      date: 'Fev 04',
+      tag: 'trusted',
+      text: `Os interessados em viajar durante as férias de Fevereiro já podem adquirir suas passagens.
+       Com a venda antecipada de passagens disponibilizada pela Vale,
+       é possível adquirir os bilhetes de viagem com até 60 dias de antecedência da data do passeio e,
+       assim, programa-lo de forma mais tranquila e evitar transtornos.
+
+       Em julho, devido ao recesso escolar, a procura maior por passagens de trem se dá na segunda quinzena e,
+       dependendo da procura, a quantidade de carros de passagens será ampliada.
+       A compra antecipada pode ser feita nas estações ao longo da Estrada de Ferro Vitória a Minas,
+       nos pontos de venda disponibilizados pela Vale em diferentes cidades por onde a linha férrea passa e, também, no site do Trem de Passageiros.`,
+    },
+    {
+      flagged: false,
+      name: 'wasabi-jpn@airnippon.jpn',
+      from: 'Nico Nico Douga',
+      subject: 'IKIMASU!',
+      date: 'Fev 01',
+      tag: 'trusted',
+      text: `けんめい： アポイントメントのお願ねがい
+      本文ほんぶん：
+      株式会社かぶしきがいしゃワサビ石いし田だ様さま
+
+      いつもお世話せわになります。
+      合同会社ごうどうがいしゃ 暖だんの松本まつもとです。
+
+      大変たいへんお待またせいたしましたが、
+      先日せんじつご依い頼らい頂いただいた見み積つもり書しょが完成かんせいいたしました。
+      何点なんてんか直ちょく接せつご説明せつめいしたいところがありまして、
+      よろしければ下記かきの日程にっていで少すこしお時じ間かんを頂いただけないでしょうか。
+
+      4し月がつ1日ついたち 9時くじ～12じゅうに時じ
+      4し月がつ2日ふつか13じゅうさん時じ～17じゅうなな時じ
+      4し月がつ3日みっか10じゅう時じ～17じゅうなな時じ
+
+      お忙いそがしいところ恐縮きょうしゅくですが、ご調ちょう整せいを頂いただけますと幸さいわいです。
+
+      以い上じょう、ご確認かくにんをお願ねがいいたします。
+
+      ―――――――――――――――――
+      合同会社ごうどうがいしゃ 暖だん松本まつもと段だん
+      長崎県島原ながさきけんしまばら市し本光ほんこう寺じ町まち 3296-3
+      TEL: +81-99-9999-9999
+      Email: info@wasabi-jpn.com
+      ―――――――――――――――――`,
+    },
   ],
 };
 

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex';
+  import { mapGetters, mapMutations } from 'vuex';
 
   export default {
     name: 'EmailView',
@@ -18,7 +18,13 @@
     props: { id: String },
     computed: {
       ...mapGetters(['byId']),
+      ...mapMutations(['read']),
       message() { return this.byId(this.id); },
+    },
+    mounted() {
+      if (!this.message.read) {
+        this.read(this.id);
+      }
     },
   };
 </script>

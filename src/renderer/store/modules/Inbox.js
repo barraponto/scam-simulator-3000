@@ -540,6 +540,9 @@ const state = {
 };
 
 const mutations = {
+  read(state, { id }) {
+    state.messages.find(m => m.id === id).read = true;
+  },
 };
 
 const actions = {

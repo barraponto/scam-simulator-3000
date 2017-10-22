@@ -10,14 +10,15 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex';
+
   export default {
     name: 'EmailView',
     components: { },
     props: ['id'],
     computed: {
-      message() {
-        return this.$store.state.Inbox.messages[this.id];
-      },
+      ...mapGetters(['messages']),
+      message() { return this.messages.find(m => m.id === this.id); },
     },
   };
 </script>

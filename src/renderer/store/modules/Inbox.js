@@ -546,7 +546,8 @@ const actions = {
 };
 
 const getters = {
-  messages: state => state.messages || [],
+  messages: (state, getters, rootState, rootGetters) =>
+    state.messages.filter(m => m.fase <= rootGetters.level),
   withLabel: (state, getters) =>
     label => getters.messages.filter(m => !label || m.tag === label),
   unread: (state, getters) =>

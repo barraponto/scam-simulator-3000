@@ -1,7 +1,7 @@
 <template>
   <el-container id="email-app">
     <el-aside>
-      <h1 class="logo">Yuppi!</h1>
+      <h2 class="logo">Yuppi!</h2>
       <nav class="labels">
         <router-link to="/" class="label">Inbox</router-link>
         <router-link to="/label/trusted" class="label">
@@ -43,6 +43,8 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
   #email-app {
     height: 100vh;
   }
@@ -54,6 +56,7 @@
     color: white;
     text-align: center;
     font-size: 4em;
+    font-family: 'Bowlby One SC', cursive;
   }
   .labels, .label {
     display: block;
@@ -79,8 +82,8 @@
     margin: 0 auto;
     margin-bottom: 10%;
     width: inherit;
-    font: 3.5em "Open Sans";
+    font: 3.5em "Bowlby One SC";
     color: white;
-    visibility: hidden;
+    visibility: visible;
   }
 </style>

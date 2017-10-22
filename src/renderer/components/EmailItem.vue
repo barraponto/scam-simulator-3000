@@ -29,17 +29,21 @@
     background-color: #eee;
   }
   .email--flag {
+    width: 5%;
     flex-basis: 2em;
     flex-grow: 0;
   }
   .email--from {
+    width: 30%;
     max-width: 12em;
     padding-right: 3em;
   }
   .email--subject, .email--from {
+    width: 50%;
     flex-grow: 1;
   }
   .email--date {
+    width: 15%;
     flex-basis: 4em;
     flex-grow: 0;
   }

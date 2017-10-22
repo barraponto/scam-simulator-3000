@@ -5,16 +5,20 @@
       <div class="mail-sender">De: {{message.name}} ({{message.from}})</div>
       <div class="mail-date">{{message.date}}</div>
     </div>
-    <div class="mail-content">{{message.text}}</div>
+    <markdown class="mail-content" :source="message.text" />
   </div>
 </template>
 
 <script>
   import { mapGetters, mapActions } from 'vuex';
+  import VueMarkdown from 'vue-markdown';
 
   export default {
     name: 'EmailView',
-    components: { },
+    data() {
+      return {};
+    },
+    components: { markdown: VueMarkdown },
     props: { id: String },
     computed: {
       ...mapGetters(['byId']),

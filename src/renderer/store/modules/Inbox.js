@@ -540,12 +540,18 @@ const state = {
 };
 
 const mutations = {
-  read(state, { id }) {
-    state.messages.find(m => m.id === id).read = true;
+  markMessageAsRead(state, id) {
+    const message = state.messages.find(m => m.id === id);
+    message.read = true;
   },
 };
 
 const actions = {
+  viewed({ commit, getters }, id) {
+    if (!getters.byId(id).read) {
+      commit('markMessageAsRead', id);
+    }
+  },
 };
 
 const getters = {
